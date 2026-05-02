@@ -81,7 +81,7 @@ export default function CartOffcanvas({openCartMini,setOpenCartMini}:IProps) {
             </div>
             <div className="cartmini__checkout-btn">
               <Link
-                href="/portfolio-standard"
+                href="/our-work"
                 className="tp-btn-black-2 text-center mb-10 w-100"
               >
                 view portfolio

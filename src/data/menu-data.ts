@@ -43,7 +43,7 @@ const menu_data: IMenuDT[] = [
   {
     id: 3,
     title: "Our Work",
-    link: "/portfolio-standard",
+    link: "/our-work",
     home_menus: [
       {
         title: "Branding",
@@ -73,7 +73,7 @@ const menu_data: IMenuDT[] = [
     //       {
     //         id: 1,
     //         menu_lists: [
-    //           { title: "Standard", link: "/portfolio-standard" },
+    //           { title: "Standard", link: "/our-work" },
     //           { title: "Showcase", link: "/portfolio-showcase" },
     //         ],
     //       },
@@ -93,7 +93,7 @@ const menu_data: IMenuDT[] = [
     //         title: "List Layouts",
     //         menu_lists: [
     //           { title: "two-columns", link: "/portfolio-grid-col-2" },
-    //           { title: "standard", link: "/portfolio-standard" },
+    //           { title: "standard", link: "/our-work" },
     //           { title: "showcase", link: "/portfolio-showcase" },
     //         ],
     //       },
@@ -176,9 +176,9 @@ export default menu_data;
 //   {
 //     id: 3,
 //     title: "Portfolio",
-//     link: "/portfolio-standard",
+//     link: "/our-work",
 //     dropdown_menus: [
-//       { title: "Standard", link: "/portfolio-standard" },
+//       { title: "Standard", link: "/our-work" },
 //       { title: "Showcase", link: "/portfolio-showcase" },
 //       { title: "Two Columns", link: "/portfolio-grid-col-2" },
 //       { title: "Project Details", link: "/portfolio-details-1" },

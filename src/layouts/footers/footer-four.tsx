@@ -26,7 +26,7 @@ export default function FooterFour() {
                         <Link href="/service">Services</Link>
                       </li>
                       <li>
-                        <Link href="/portfolio-standard">Portfolio</Link>
+                        <Link href="/our-work">Our Work</Link>
                       </li>
                       <li>
                         <Link href="/home-4">Home Four</Link>

@@ -100,7 +100,7 @@ const HeaderMenus = () => {
                           <span>Explore the selected portfolio pages</span>
                           <Link
                             className="tp-shop-btn"
-                            href="/portfolio-standard"
+                            href="/our-work"
                           >
                             View Work
                           </Link>

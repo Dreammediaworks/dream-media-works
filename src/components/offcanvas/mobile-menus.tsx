@@ -120,7 +120,7 @@ export default function MobileMenus() {
                               <span>20% Off all Shoes</span>
                               <Link
                                 className="tp-shop-btn"
-                                href="/portfolio-standard"
+                                href="/our-work"
                               >
                                 View Work
                               </Link>

@@ -23,7 +23,7 @@ import { imageRevealAnimation } from "@/utils/image-reveal-anim";
 import { hoverBtn } from "@/utils/hover-btn";
 import HeaderOne from "@/layouts/headers/header-one";
 
-const PortfolioStandardMain = () => {
+const OurWorkMain = () => {
   useScrollSmooth();
 
   useEffect(() => {
@@ -111,4 +111,4 @@ const PortfolioStandardMain = () => {
   );
 };
 
-export default PortfolioStandardMain;
+export default OurWorkMain;

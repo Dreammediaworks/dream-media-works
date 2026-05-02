@@ -25,9 +25,16 @@ import {
   titleAnimation,
   zoomAnimation,
 } from "@/utils/title-animation";
+import { getOurWorkCategory } from "@/data/our-work-data";
 
-const PortfolioGridColTwoMain = () => {
+type IProps = {
+  categorySlug?: string;
+};
+
+const PortfolioGridColTwoMain = ({ categorySlug }: IProps) => {
   useScrollSmooth();
+  const category = categorySlug ? getOurWorkCategory(categorySlug) : undefined;
+  const title = category ? category.title : "Classic Grid";
 
   useEffect(() => {
     document.body.classList.add("tp-magic-cursor");
@@ -81,7 +88,7 @@ const PortfolioGridColTwoMain = () => {
                         Dream MeDia WorKs Studio
                       </span>
                       <h4 className="tm-hero-title fs-220 tp-char-animation">
-                        Classic Grid
+                        {title}
                       </h4>
                     </div>
                     <div className="tm-hero-text tp_title_anim">
@@ -98,7 +105,7 @@ const PortfolioGridColTwoMain = () => {
             {/* portfolio hero */}
 
             {/* portfolio area */}
-            <PortfolioGridColTwoArea />
+            <PortfolioGridColTwoArea categorySlug={categorySlug} />
             {/* portfolio area */}
 
             {/* big text */}
