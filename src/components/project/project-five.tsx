@@ -38,7 +38,7 @@ export default function ProjectFive({ style_2 = false }: IProps) {
             <div key={item.id} className="col-xl-6 col-lg-6 col-md-6">
               <div
                 className="tp-project-5-2-thumb fix mb-140 p-relative not-hide-cursor"
-                data-cursor="View<br>Demo"
+                data-cursor="View<br>Our Work"
               >
                 <Link className="cursor-hide" href={item.href}>
                   <span className="tp_img_reveal" style={{ display: "block" }}>
@@ -71,7 +71,7 @@ export default function ProjectFive({ style_2 = false }: IProps) {
             </div>
           ))}
         </div>
-        <div className="row">
+        {/* <div className="row">
           <div className="col-xl-12">
             <div className="tp-projct-5-2-btn-box d-flex justify-content-center">
               <div className="tp-hover-btn-wrapper">
@@ -92,7 +92,7 @@ export default function ProjectFive({ style_2 = false }: IProps) {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

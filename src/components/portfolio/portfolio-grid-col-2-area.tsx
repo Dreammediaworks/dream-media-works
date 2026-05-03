@@ -1,12 +1,8 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { UpArrow } from "../svg";
 import { useIsotop } from "@/hooks/use-isotop";
-import {
-  getOurWorkItems,
-  ourWorkCategories,
-} from "@/data/our-work-data";
+import { getOurWorkItems, ourWorkCategories } from "@/data/our-work-data";
 
 type IProps = {
   categorySlug?: string;
@@ -46,20 +42,33 @@ export default function PortfolioGridColTwoArea({ categorySlug }: IProps) {
           {portfolio_data.map((item) => (
             <div
               key={item.id}
-              className={`col-xl-6 col-lg-6 col-md-6 grid-item ${item.show}`}
+              className={`col-xl-4 col-lg-6 col-md-6 grid-item ${item.show}`}
             >
-              <div className="tp-project-5-2-thumb anim-zoomin-wrap mb-30 not-hide-cursor p-relative" data-cursor="View<br>Demo">
-                <Link href={`/our-work/${item.slug}`} className="cursor-hide">
+              <div
+                className="
+                // tp-project-5-2-thumb
+                 anim-zoomin-wrap mb-30 not-hide-cursor p-relative
+                 "
+                // data-cursor="View<br>Demo"
+              >
+                <Link
+                  href={`/our-work/${item.slug}`}
+                  className="cursor-hide"
+                  style={{
+                    display: "block",
+                    position: "relative",
+                    aspectRatio: "4 / 5",
+                    width: "100%",
+                    overflow: "hidden",
+                  }}
+                >
                   <Image
-                    className="anim-zoomin"
+                    className="portfolio-grid-img anim-zoomin"
                     src={item.img}
                     alt="port-img"
-                    width={1080}
-                    height={1350}
+                    fill
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                     style={{
-                      width: "100%",
-                      height: "auto",
-                      aspectRatio: "1080 / 1350",
                       objectFit: "cover",
                     }}
                   />
@@ -75,7 +84,7 @@ export default function PortfolioGridColTwoArea({ categorySlug }: IProps) {
             </div>
           ))}
         </div>
-        <div className="row">
+        {/* <div className="row">
           <div className="col-xl-12">
             <div className="tp-projct-5-2-btn-box mt-50 d-flex justify-content-center">
               <div className="tp-hover-btn-wrapper">
@@ -94,7 +103,7 @@ export default function PortfolioGridColTwoArea({ categorySlug }: IProps) {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
