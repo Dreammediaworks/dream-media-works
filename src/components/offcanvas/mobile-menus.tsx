@@ -44,7 +44,17 @@ export default function MobileMenus() {
                             <div className="homemenu-thumb-wrap mb-20">
                               <div className="homemenu-thumb fix">
                                 <Link href={hm.link}>
-                                  <Image src={hm.img} alt={hm.title} width={512} height={480} style={{ height: "100%" }} />
+                                  <Image
+                                    src={hm.img}
+                                    alt={hm.title}
+                                    width={512}
+                                    height={512}
+                                    style={{
+                                      width: "100%",
+                                      height: "100%",
+                                      objectFit: "cover",
+                                    }}
+                                  />
                                 </Link>
                               </div>
                             </div>

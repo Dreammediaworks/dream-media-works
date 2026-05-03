@@ -123,7 +123,8 @@
             line-height: 1;
         }
         & input,
-        & textarea{
+        & textarea,
+        & select{
             border: none;
             background-color: transparent;
             color: #B2B2B2;
@@ -141,6 +142,43 @@
                 font-weight: 400;
                 @media #{$xs}{
                     font-size: 18px;
+                }
+            }
+        }
+        & select{
+            appearance: none;
+            cursor: pointer;
+            padding-right: 34px;
+            width: 100%;
+            line-height: 45px;
+            &:focus{
+                border-color: var(--tp-common-black);
+                outline: none;
+            }
+            & option{
+                color: var(--tp-common-black);
+                background-color: var(--tp-common-white);
+                font-size: 16px;
+            }
+        }
+        &.cn-contactform-select{
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "\f107";
+                right: 0;
+                bottom: 13px;
+                color: #414144;
+                font-family: "Font Awesome 6 Pro";
+                font-size: 15px;
+                font-weight: 400;
+                pointer-events: none;
+                transition: 0.3s;
+            }
+            &:focus-within{
+                &::after{
+                    color: var(--tp-common-black);
+                    transform: rotate(180deg);
                 }
             }
         }
@@ -382,7 +420,8 @@
             color: rgba(255, 255, 255, 0.80);
         }
         & .cn-contactform-input input, 
-        & .cn-contactform-input textarea {
+        & .cn-contactform-input textarea,
+        & .cn-contactform-input select {
             color: var(--tp-common-white);
             border-bottom: 1px solid rgba(255, 255, 255, 0.20);
             @include placeholder{
@@ -391,6 +430,9 @@
             &:focus{
                 border-bottom: 1px solid var(--tp-common-white);
             }
+        }
+        & .cn-contactform-select::after {
+            color: rgba(255, 255, 255, 0.80);
         }
     }
     &-map{

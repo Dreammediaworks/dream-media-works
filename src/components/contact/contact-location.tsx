@@ -1,43 +1,56 @@
 import React from "react";
 import Image from "next/image";
+import type { StaticImageData } from "next/image";
 // images
 import location_1 from "@/assets/img/inner-contact/contact/info-1.jpg";
 import location_2 from "@/assets/img/inner-contact/contact/info-2.jpg";
 import location_3 from "@/assets/img/inner-contact/contact/info-3.jpg";
 import Link from "next/link";
+import { contactData } from "@/data/contact-data";
 
 // data
-const location_data = [
+type LocationData = {
+  id: number;
+  img: StaticImageData;
+  country: string;
+  time?: string;
+  location_title: string;
+  address: string;
+  phone: string;
+  email: string;
+};
+
+const location_data: LocationData[] = [
   {
     id: 1,
     img: location_1,
-    country: "France",
-    time: "12:00 pm GMT+2",
+    country: "India",
+    // time: "12:00 pm GMT+2",
     location_title: "Base Create",
-    address: "Base Creative, 43 Appleton <br /> Lane, 3287 Hamilton",
-    phone: "(+91) 76001726",
-    email: "Hello@contact.com",
+    address: contactData?.address,
+    phone: contactData?.phone,
+    email: contactData?.email,
   },
-  {
-    id: 2,
-    img: location_2,
-    country: "Germany",
-    time: "11:00 pm GMT+2",
-    location_title: "Base Create",
-    address: "Base Creative, 43 Appleton <br /> Lane, 3287 Hamilton",
-    phone: "(+91) 76001726",
-    email: "Hello@contact.com",
-  },
-  {
-    id: 3,
-    img: location_3,
-    country: "New Zealand",
-    time: "10:00 pm GMT+2",
-    location_title: "Base Create",
-    address: "Base Creative, 43 Appleton <br /> Lane, 3287 Hamilton",
-    phone: "(+91) 76001726",
-    email: "Hello@contact.com",
-  },
+  // {
+  //   id: 2,
+  //   img: location_2,
+  //   country: "Germany",
+  //   time: "11:00 pm GMT+2",
+  //   location_title: "Base Create",
+  //   address: "Base Creative, 43 Appleton <br /> Lane, 3287 Hamilton",
+  //   phone: "(+91) 76001726",
+  //   email: "Hello@contact.com",
+  // },
+  // {
+  //   id: 3,
+  //   img: location_3,
+  //   country: "New Zealand",
+  //   time: "10:00 pm GMT+2",
+  //   location_title: "Base Create",
+  //   address: "Base Creative, 43 Appleton <br /> Lane, 3287 Hamilton",
+  //   phone: "(+91) 76001726",
+  //   email: "Hello@contact.com",
+  // },
 ];
 
 const ContactLocation = () => {
@@ -59,10 +72,12 @@ const ContactLocation = () => {
                     </div>
                     <div className="cn-contact-left-info">
                       <h4 className="cn-contact-left-title">{item.country}</h4>
-                      <span>
-                        <i className="fa-regular fa-clock"></i>
-                        {item.time}
-                      </span>
+                      {item?.time && (
+                        <span>
+                          <i className="fa-regular fa-clock"></i>
+                          {item?.time}
+                        </span>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -84,8 +99,9 @@ const ContactLocation = () => {
                       </div>
                     </div>
                     <div className="cn-contact-right-info text-start text-md-end">
-                      <Link href="tel:(+91)76001726">{item.phone}</Link> <br />
-                      <Link href="mailto:Hello@contact.com">{item.email}</Link>
+                      <Link href={`tel: ${item?.phone}`}>{item.phone}</Link>{" "}
+                      <br />
+                      <Link href={`mailto: ${item?.email}`}>{item.email}</Link>
                     </div>
                   </div>
                 </div>

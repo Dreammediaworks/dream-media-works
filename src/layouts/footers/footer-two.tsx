@@ -1,9 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/assets/img/logo/logo-white.png";
-import logo_2 from "@/assets/img/logo/logo.png";
-import logo2 from "../../../public/assets/img/logo/dmw.png";
+import logo from "@/assets/img/logo/dmw-white.png";
+import logo_2 from "@/assets/img/logo/dmw.png";
 import { RightArrow } from "@/components/svg";
 
 // prop type
@@ -29,17 +28,17 @@ export default function FooterTwo({
               <div className="tp-footer-2-widget footer-col-2-1">
                 {!whiteFooter && (
                   <div className="tp-footer-2-widget-logo">
-                    <Link href="/home-1">
+                    <Link href="/home">
                       <Image src={logo} alt="logo" />
                     </Link>
                   </div>
                 )}
                 {whiteFooter && (
                   <div className="tp-footer-2-widget-logo tp-footer-dark">
-                    <Link className="logo-1" href="/home-1">
+                    <Link className="logo-1" href="/home">
                       <Image src={logo_2} alt="logo" />
                     </Link>
-                    <Link className="logo-2" href="/home-1">
+                    <Link className="logo-2" href="/home">
                       <Image src={logo} alt="logo" />
                     </Link>
                   </div>
@@ -57,7 +56,7 @@ export default function FooterTwo({
                   <h4 className="tp-footer-2-widget-title">Sitemap</h4>
                   <ul>
                     <li>
-                      <Link href="/home-1">Home</Link>
+                      <Link href="/home">Home</Link>
                     </li>
                     <li>
                       <Link href="/about-us">About</Link>
@@ -69,7 +68,7 @@ export default function FooterTwo({
                       <Link href="/our-work">Our Work</Link>
                     </li>
                     <li>
-                      <Link href="/home-4">Home Four</Link>
+                      <Link href="/shehnai-inweds/home">Home Four</Link>
                     </li>
                   </ul>
                 </div>

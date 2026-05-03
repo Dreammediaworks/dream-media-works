@@ -19,11 +19,15 @@ const HeaderMenus = () => {
                           <div className="homemenu-thumb fix">
                             <Link href={home_menu.link}>
                               <Image
-                                style={{ width: "auto", height: "auto" }}
+                                style={{
+                                  width: "100%",
+                                  height: "100%",
+                                  objectFit: "cover",
+                                }}
                                 src={home_menu.img}
                                 alt="home-img"
                                 width={250}
-                                height={235}
+                                height={250}
                               />
                             </Link>
                           </div>

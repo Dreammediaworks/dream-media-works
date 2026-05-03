@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Cart } from "@/components/svg";
 import HeaderMenus from "./header-menus";
-import logo from "@/assets/img/logo/logo.png";
-import logo_2 from "@/assets/img/logo/logo-white.png";
+import logo from "@/assets/img/logo/dmw.png";
+import logo_2 from "@/assets/img/logo/dmw-white.png";
 import CartOffcanvas from "@/components/offcanvas/cart-offcanvas";
 import MobileOffcanvas from "@/components/offcanvas/mobile-offcanvas";
 import useStickyHeader from "@/hooks/use-sticky-header";
@@ -35,10 +35,10 @@ export default function HeaderEleven({transparent=false,cls=''}: IProps) {
             <div className="row align-items-center">
               <div className="col-xl-2 col-lg-6 col-md-6 col-6">
                 <div className="tp-inner-header-logo tp-header-logo">
-                  <Link className={`${transparent?'ab-logo-1':'logo-1'}`} href="/home-1">
+                  <Link className={`${transparent?'ab-logo-1':'logo-1'}`} href="/home">
                     <Image src={transparent?logo_2:logo} alt="logo" />
                   </Link>
-                  <Link className={`${transparent?'ab-logo-2':'logo-2'}`} href="/home-1">
+                  <Link className={`${transparent?'ab-logo-2':'logo-2'}`} href="/home">
                     <Image src={transparent?logo:logo_2} alt="logo" />
                   </Link>
                 </div>

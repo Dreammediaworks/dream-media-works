@@ -3,26 +3,26 @@ import { Facebook, Instagram, Linkdin, Twitter } from "../svg";
 import Link from "next/link";
 
 const social_data = [
-  {
-    id: 1,
-    icon: <Linkdin />,
-    link: "https://www.facebook.com/",
-  },
-  {
-    id: 2,
-    icon: <Twitter />,
-    link: "https://twitter.com/",
-  },
+  // {
+  //   id: 1,
+  //   icon: <Linkdin />,
+  //   link: "https://www.facebook.com/",
+  // },
+  // {
+  //   id: 2,
+  //   icon: <Twitter />,
+  //   link: "https://twitter.com/",
+  // },
   {
     id: 3,
     icon: <Instagram />,
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/dreamediaworks/",
   },
-  {
-    id: 4,
-    icon: <Facebook />,
-    link: "https://www.facebook.com/",
-  },
+  // {
+  //   id: 4,
+  //   icon: <Facebook />,
+  //   link: "https://www.facebook.com/",
+  // },
 ];
 
 export default function Social() {

@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import HomeOnePage from "./(homes)/home-1/page";
+import HomeOnePage from "./(dmw)/home/page";
 
 export const metadata: Metadata = {
   title: "Dream MeDia WorKs  - Home Page",

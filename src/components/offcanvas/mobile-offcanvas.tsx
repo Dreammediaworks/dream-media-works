@@ -3,14 +3,13 @@ import Image from "next/image";
 import { Behance, CloseTwo, Dribble, InstagramTwo, Youtube } from "../svg";
 
 // images
-import logo from "@/assets/img/logo/logo.png";
+import logo from "@/assets/img/logo/dmw.png";
 import gallery_1 from "@/assets/img/menu/offcanvas/offcanvas-1.jpg";
 import gallery_2 from "@/assets/img/menu/offcanvas/offcanvas-2.jpg";
 import gallery_3 from "@/assets/img/menu/offcanvas/offcanvas-3.jpg";
 import gallery_4 from "@/assets/img/menu/offcanvas/offcanvas-4.jpg";
 import MobileMenus from "./mobile-menus";
 import Link from "next/link";
-import logo2 from "../../../public/assets/img/logo/dmw.png";
 import { contactData, socialData } from "@/data/contact-data";
 
 const gallery_images = [gallery_1, gallery_2, gallery_3, gallery_4];
@@ -34,7 +33,7 @@ export default function MobileOffcanvas({
               <Link href="#">
                 <Image
                   style={{ width: "auto", height: "auto" }}
-                  src={logo2}
+                  src={logo}
                   alt="logo"
                   width={85}
                   height={26}
