@@ -43,7 +43,7 @@ export default function AboutUsArea() {
             </div>
           </div>
         </div>
-        <div id="about-info" className="row">
+        <div id="about-details" className="row">
           <div className="col-xxl-9">
             <div className="ab-about-content p-relative">
               <span>
