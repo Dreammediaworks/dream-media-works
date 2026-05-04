@@ -1,6 +1,6 @@
 "use client";
 import { gsap } from "gsap";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import useScrollSmooth from "@/hooks/use-scroll-smooth";
 import {
@@ -13,8 +13,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 // internal imports
 import Wrapper from "@/layouts/wrapper";
-import HeaderEleven from "@/layouts/headers/header-eleven";
-import FooterTwo from "@/layouts/footers/footer-two";
+import FooterOne from "@/layouts/footers/footer-one";
 import ProjectFive from "@/components/project/project-five";
 import BigText from "@/components/big-text";
 // animation
@@ -23,7 +22,7 @@ import { imageRevealAnimation } from "@/utils/image-reveal-anim";
 import { hoverBtn } from "@/utils/hover-btn";
 import HeaderOne from "@/layouts/headers/header-one";
 
-const PortfolioStandardMain = () => {
+const OurWorkMain = () => {
   useScrollSmooth();
 
   useEffect(() => {
@@ -103,7 +102,7 @@ const PortfolioStandardMain = () => {
           </main>
 
           {/* footer area */}
-          <FooterTwo topCls="" />
+          <FooterOne />
           {/* footer area */}
         </div>
       </div>
@@ -111,4 +110,4 @@ const PortfolioStandardMain = () => {
   );
 };
 
-export default PortfolioStandardMain;
+export default OurWorkMain;

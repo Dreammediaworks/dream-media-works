@@ -8,12 +8,12 @@ const menu_data: IMenuDT[] = [
     // home_menus: [
     //   {
     //     title: "MAIN HOME",
-    //     link: "/home-1",
+    //     link: "/home",
     //     img: "/assets/img/menu/white-version/home-1.jpg",
     //   },
     //   {
     //     title: "DIGITAL AGENCY",
-    //     link: "/home-4",
+    //     link: "/shehnai-inweds/home",
     //     img: "/assets/img/menu/white-version/home-4.jpg",
     //   },
     // ],
@@ -34,8 +34,8 @@ const menu_data: IMenuDT[] = [
     //   second: {
     //     title: "Selected Homes",
     //     submenus: [
-    //       { title: "MAIN HOME", link: "/home-1" },
-    //       { title: "DIGITAL AGENCY", link: "/home-4" },
+    //       { title: "MAIN HOME", link: "/home" },
+    //       { title: "DIGITAL AGENCY", link: "/shehnai-inweds/home" },
     //     ],
     //   },
     // },
@@ -43,27 +43,27 @@ const menu_data: IMenuDT[] = [
   {
     id: 3,
     title: "Our Work",
-    link: "/portfolio-standard",
+    link: "/our-work",
     home_menus: [
       {
         title: "Branding",
-        link: "/home-1",
-        img: "/assets/img/menu/white-version/home-1.jpg",
+        link: "/our-work/branding",
+        img: "/assets/img/our-work/branding/branding1.png",
       },
       {
         title: "Concept",
-        link: "/home-4",
-        img: "/assets/img/menu/white-version/home-4.jpg",
+        link: "/our-work/concept",
+        img: "/assets/img/our-work/concept/concept1.png",
       },
       {
         title: "Creative",
-        link: "/home-1",
-        img: "/assets/img/menu/white-version/home-1.jpg",
+        link: "/our-work",
+        img: "/assets/img/our-work/branding/branding3.png",
       },
       {
         title: "Visuals",
-        link: "/home-4",
-        img: "/assets/img/menu/white-version/home-4.jpg",
+        link: "/our-work/visual",
+        img: "/assets/img/our-work/visual/visual1.png",
       },
     ],
     // portfolio_mega_menus: {
@@ -73,15 +73,15 @@ const menu_data: IMenuDT[] = [
     //       {
     //         id: 1,
     //         menu_lists: [
-    //           { title: "Standard", link: "/portfolio-standard" },
+    //           { title: "Standard", link: "/our-work" },
     //           { title: "Showcase", link: "/portfolio-showcase" },
     //         ],
     //       },
     //       {
     //         id: 2,
     //         menu_lists: [
-    //           { title: "Two Columns", link: "/portfolio-grid-col-2" },
-    //           { title: "Project Details", link: "/portfolio-details-1" },
+    //           { title: "Two Columns", link: "/our-work" },
+    //           { title: "Project Details", link: "/our-work" },
     //         ],
     //       },
     //     ],
@@ -92,8 +92,8 @@ const menu_data: IMenuDT[] = [
     //         id: 1,
     //         title: "List Layouts",
     //         menu_lists: [
-    //           { title: "two-columns", link: "/portfolio-grid-col-2" },
-    //           { title: "standard", link: "/portfolio-standard" },
+    //           { title: "two-columns", link: "/our-work" },
+    //           { title: "standard", link: "/our-work" },
     //           { title: "showcase", link: "/portfolio-showcase" },
     //         ],
     //       },
@@ -101,7 +101,7 @@ const menu_data: IMenuDT[] = [
     //         id: 2,
     //         title: "PORTFOLIO SINGLES",
     //         menu_lists: [
-    //           { title: "images Small", link: "/portfolio-details-1" },
+    //           { title: "images Small", link: "/our-work" },
     //         ],
     //       },
     //     ],
@@ -133,7 +133,7 @@ const menu_data: IMenuDT[] = [
   {
     id: 6,
     title: "Shehnai Inweds",
-    link: "/home-4",
+    link: "/shehnai-inweds/home",
     // dropdown_menus: [
     //   { title: "About Us", link: "/about-us" },
     //   { title: "Our Services", link: "/service" },
@@ -157,10 +157,10 @@ export default menu_data;
 //   {
 //     id: 1,
 //     title: "Home",
-//     link: "/home-1",
+//     link: "/home",
 //     dropdown_menus: [
-//       { title: "MAIN HOME", link: "/home-1" },
-//       { title: "DIGITAL AGENCY", link: "/home-4" },
+//       { title: "MAIN HOME", link: "/home" },
+//       { title: "DIGITAL AGENCY", link: "/shehnai-inweds/home" },
 //     ],
 //   },
 //   {
@@ -176,12 +176,12 @@ export default menu_data;
 //   {
 //     id: 3,
 //     title: "Portfolio",
-//     link: "/portfolio-standard",
+//     link: "/our-work",
 //     dropdown_menus: [
-//       { title: "Standard", link: "/portfolio-standard" },
+//       { title: "Standard", link: "/our-work" },
 //       { title: "Showcase", link: "/portfolio-showcase" },
-//       { title: "Two Columns", link: "/portfolio-grid-col-2" },
-//       { title: "Project Details", link: "/portfolio-details-1" },
+//       { title: "Two Columns", link: "/our-work" },
+//       { title: "Project Details", link: "/our-work" },
 //     ],
 //   },
 //   {

@@ -38,7 +38,7 @@ const ErrorMain = () => {
                           Something went Wrong...
                         </h4>
                         <p>Sorry, we {"couldn't"} find your page.</p>
-                        <Link className="tp-btn-black-2" href="/home-1">
+                        <Link className="tp-btn-black-2" href="/home">
                           Back to Home
                         </Link>
                       </div>

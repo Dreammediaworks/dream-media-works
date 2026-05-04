@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import logo from "@/assets/img/logo/logo-white.png";
+import logo from "@/assets/img/logo/dmw-white.png";
 import { RightArrow, SvgBgSm } from "@/components/svg";
 import Link from "next/link";
 
@@ -17,7 +17,7 @@ export default function FooterFour() {
                   <div className="tp-footer-3-menu">
                     <ul>
                       <li>
-                        <Link href="/home-1">Home</Link>
+                        <Link href="/home">Home</Link>
                       </li>
                       <li>
                         <Link href="/about-us">About</Link>
@@ -26,10 +26,10 @@ export default function FooterFour() {
                         <Link href="/service">Services</Link>
                       </li>
                       <li>
-                        <Link href="/portfolio-standard">Portfolio</Link>
+                        <Link href="/our-work">Our Work</Link>
                       </li>
                       <li>
-                        <Link href="/home-4">Home Four</Link>
+                        <Link href="/shehnai-inweds/home">Home Four</Link>
                       </li>
                     </ul>
                   </div>
@@ -57,7 +57,7 @@ export default function FooterFour() {
                     Drop us a line sed id semper <br />
                     risus in hend rerit.
                   </p>
-                  <Link className="tp-footer-3-logo p-relative" href="/home-1">
+                  <Link className="tp-footer-3-logo p-relative" href="/home">
                     <Image src={logo} alt="logo" />
                   </Link>
                   <p className="tp-footer-3-copyright">

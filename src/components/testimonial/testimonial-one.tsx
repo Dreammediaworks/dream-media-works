@@ -14,14 +14,14 @@ const testimonial_data = [
     name: "Louis Fantun",
     designation: "Designer",
   },
-  {
-    id: 2,
-    desc: `“Nulla ut enim non magna placerat scelerisque sed eu dolor. Sed eu faucibus
-    turpis. Ut bibendum tempor tempus. Ut scelerisque est
-    posuere ex pretium laoreet.”`,
-    name: "Robert Smith",
-    designation: "Developer",
-  },
+  // {
+  //   id: 2,
+  //   desc: `“Nulla ut enim non magna placerat scelerisque sed eu dolor. Sed eu faucibus
+  //   turpis. Ut bibendum tempor tempus. Ut scelerisque est
+  //   posuere ex pretium laoreet.”`,
+  //   name: "Robert Smith",
+  //   designation: "Developer",
+  // },
 ];
 
 const slider_setting: SwiperOptions = {

@@ -3,51 +3,16 @@ import Image from "next/image";
 import LineTextFour from "../line-text/line-text-4";
 import { UpArrow } from "../svg";
 import Link from "next/link";
+import { ourWorkCategories } from "@/data/our-work-data";
 
-const project_data = [
-  {
-    id: 1,
-    title: "",
-    category: "Photoshoot",
-    img: "/assets/img/our-work/77.png",
-    year: 2024,
-  },
-  {
-    id: 2,
-    title: "",
-    category: "Photoshoot",
-    img: "/assets/img/our-work/79.png",
-    year: 2024,
-  },
-  {
-    id: 3,
-    title: "",
-    category: "Branding",
-    img: "/assets/img/our-work/MM Pictures.png",
-    year: 2024,
-  },
-  {
-    id: 4,
-    title: "",
-    category: "Branding",
-    img: "/assets/img/our-work/MM Pictures (1).png",
-    year: 2024,
-  },
-  {
-    id: 5,
-    title: "",
-    category: "Branding",
-    img: "/assets/img/our-work/MM Pictures (2).png",
-    year: 2024,
-  },
-  {
-    id: 6,
-    title: "",
-    category: "Concept",
-    img: "/assets/img/our-work/MM Pictures (3).png",
-    year: 2024,
-  },
-];
+const project_data = ourWorkCategories.map((category, index) => ({
+  id: index + 1,
+  title: "",
+  category: category.title,
+  img: category.featuredImage,
+  href: `/our-work/${category.slug}`,
+  year: 2024,
+}));
 
 // prop type
 type IProps = {
@@ -73,17 +38,24 @@ export default function ProjectFive({ style_2 = false }: IProps) {
             <div key={item.id} className="col-xl-6 col-lg-6 col-md-6">
               <div
                 className="tp-project-5-2-thumb fix mb-140 p-relative not-hide-cursor"
-                data-cursor="View<br>Demo"
+                data-cursor="View<br>Our Work"
               >
-                <Link className="cursor-hide" href="/portfolio-details-1">
-                  <span className="tp_img_reveal">
-                    <div className="tp_img_reveal">
+                <Link className="cursor-hide" href={item.href}>
+                  <span className="tp_img_reveal" style={{ display: "block" }}>
+                    <div
+                      className="tp_img_reveal"
+                      style={{ aspectRatio: "1080 / 1350" }}
+                    >
                       <Image
                         src={item.img}
                         alt="project-img"
-                        width={900}
-                        height={700}
-                        style={{ height: "auto" }}
+                        width={1080}
+                        height={1350}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                        }}
                       />
                     </div>
                   </span>
@@ -91,7 +63,7 @@ export default function ProjectFive({ style_2 = false }: IProps) {
                     <span>{item.category}</span>
                   </div>
                   <div className="tp-project-5-2-content tp_fade_anim">
-                    <span className="tp-project-5-2-meta">{item.year}</span>
+                    {/* <span className="tp-project-5-2-meta">{item.year}</span> */}
                     <h4 className="tp-project-5-2-title-sm">{item.title}</h4>
                   </div>
                 </Link>
@@ -99,7 +71,7 @@ export default function ProjectFive({ style_2 = false }: IProps) {
             </div>
           ))}
         </div>
-        <div className="row">
+        {/* <div className="row">
           <div className="col-xl-12">
             <div className="tp-projct-5-2-btn-box d-flex justify-content-center">
               <div className="tp-hover-btn-wrapper">
@@ -107,7 +79,7 @@ export default function ProjectFive({ style_2 = false }: IProps) {
                   className={`tp-btn-circle ${
                     style_2 ? "style-2" : ""
                   } tp-hover-btn-item tp-hover-btn`}
-                  href="/portfolio-details-1"
+                  href="/our-work"
                 >
                   <span className="tp-btn-circle-text">
                     More <br /> Projects
@@ -120,7 +92,7 @@ export default function ProjectFive({ style_2 = false }: IProps) {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

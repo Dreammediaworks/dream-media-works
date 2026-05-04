@@ -31,7 +31,10 @@ const HeroBannerOne = () => {
                 <h1 className="tp-hero-title tp_fade_bottom">
                   <span className="p-relative">
                     Dream
-                    <span className="tp-hero-subtitle d-none d-lg-block">
+                    <span
+                      className="tp-hero-subtitle d-none d-lg-block"
+                      style={{ left: "-20%" }}
+                    >
                       Hello <br /> People! We're
                     </span>
                     <span className="tp-hero-shape-2 d-none d-md-block">
@@ -48,11 +51,16 @@ const HeroBannerOne = () => {
                   <span className="tp-hero-title-img">
                     <Image
                       className="tp-zoom-img"
-                      src="/assets/img/home-01/hero/hero-1-1.png"
+                      src="/assets/img/logo/logo-dmw-whitebg.png"
                       alt="hero-img"
                       width={270}
                       height={160}
-                      style={{ height: "auto" }}
+                      style={{
+                        height: "auto",
+                        borderRadius: "150px",
+                        maxHeight: "150px",
+                        objectFit: "cover",
+                      }}
                     />
                   </span>
                   Works
@@ -61,10 +69,10 @@ const HeroBannerOne = () => {
             </div>
             <div className="tp-hero-content tp_fade_bottom">
               <p>
-                Great brands don’t wait to be discovered — they make it
-                impossible to be ignored. At Dream MediaWorks, we blend
-                innovation, strategy, and creativity to put you exactly where
-                you need to be.
+                Great brands don’t wait to be discovered they make it impossible
+                to be ignored. At Dream MediaWorks, we blend innovation,
+                strategy, and creativity to put you exactly where you need to
+                be.
                 <br />
                 Ambitious brands, meet your people.
               </p>

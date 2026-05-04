@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import HeaderMenus from "./header-menus";
 import { Cart } from "@/components/svg";
-import logo_1 from '@/assets/img/logo/logo.png';
-import logo_2 from '@/assets/img/logo/logo-white.png';
+import logo_1 from "@/assets/img/logo/dmw.png";
+import logo_2 from "@/assets/img/logo/dmw-white.png";
 import CartOffcanvas from "@/components/offcanvas/cart-offcanvas";
 import MobileOffcanvas from "@/components/offcanvas/mobile-offcanvas";
 import useStickyHeader from "@/hooks/use-sticky-header";
@@ -29,10 +29,10 @@ const {isSticky, headerFullWidth, adjustMenuBackground} = useStickyHeader(20);
             <div className="row align-items-center">
               <div className="col-xl-3 col-lg-6 col-md-6 col-6">
                 <div className="tp-header-logo tp-header-3-logo">
-                  <Link className="logo-1" href="/home-1">
+                  <Link className="logo-1" href="/home">
                     <Image src={logo_1} alt="logo" />
                   </Link>
-                  <Link className="logo-2" href="/home-1">
+                  <Link className="logo-2" href="/home">
                     <Image src={logo_2} alt="logo" />
                   </Link>
                 </div>

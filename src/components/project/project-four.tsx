@@ -63,7 +63,7 @@ export default function ProjectFour({ style_2 = false }: IProps) {
                 <div className="tp-project-3-btn-box">
                   <Link
                     className="tp-btn-zikzak p-relative"
-                    href="/portfolio-standard"
+                    href="/our-work"
                   >
                     <span className="zikzak-content">
                       See <br /> All Project
@@ -94,11 +94,11 @@ export default function ProjectFour({ style_2 = false }: IProps) {
                     <div className="tp-project-3-content text-center">
                       <span className="tp-project-3-meta">{item.meta} </span>
                       <h4 className="tp-project-3-title-sm">
-                        <Link href="/portfolio-details-1">{item.title}</Link>
+                        <Link href="/our-work">{item.title}</Link>
                       </h4>
                       <Link
                         className="tp-btn-project-sm"
-                        href="/portfolio-details-1"
+                        href="/our-work"
                       >
                         See Project
                       </Link>

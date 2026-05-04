@@ -13,10 +13,10 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 // internal imports
 import Wrapper from "@/layouts/wrapper";
-import HeaderEleven from "@/layouts/headers/header-eleven";
+import HeaderOne from "@/layouts/headers/header-one";
 import PortfolioGridColTwoArea from "@/components/portfolio/portfolio-grid-col-2-area";
 import BigText from "@/components/big-text";
-import FooterTwo from "@/layouts/footers/footer-two";
+import FooterOne from "@/layouts/footers/footer-one";
 // animation
 import { hoverBtn } from "@/utils/hover-btn";
 import {
@@ -25,9 +25,16 @@ import {
   titleAnimation,
   zoomAnimation,
 } from "@/utils/title-animation";
+import { getOurWorkCategory } from "@/data/our-work-data";
 
-const PortfolioGridColTwoMain = () => {
+type IProps = {
+  categorySlug?: string;
+};
+
+const PortfolioGridColTwoMain = ({ categorySlug }: IProps) => {
   useScrollSmooth();
+  const category = categorySlug ? getOurWorkCategory(categorySlug) : undefined;
+  const title = category ? category.title : "Classic Grid";
 
   useEffect(() => {
     document.body.classList.add("tp-magic-cursor");
@@ -65,7 +72,7 @@ const PortfolioGridColTwoMain = () => {
       {/* magic cursor end */}
 
       {/* header area start */}
-      <HeaderEleven />
+      <HeaderOne />
       {/* header area end */}
 
       <div id="smooth-wrapper">
@@ -81,7 +88,7 @@ const PortfolioGridColTwoMain = () => {
                         Dream MeDia WorKs Studio
                       </span>
                       <h4 className="tm-hero-title fs-220 tp-char-animation">
-                        Classic Grid
+                        {title}
                       </h4>
                     </div>
                     <div className="tm-hero-text tp_title_anim">
@@ -98,7 +105,7 @@ const PortfolioGridColTwoMain = () => {
             {/* portfolio hero */}
 
             {/* portfolio area */}
-            <PortfolioGridColTwoArea />
+            <PortfolioGridColTwoArea categorySlug={categorySlug} />
             {/* portfolio area */}
 
             {/* big text */}
@@ -107,7 +114,7 @@ const PortfolioGridColTwoMain = () => {
           </main>
 
           {/* footer area */}
-          <FooterTwo topCls="" />
+          <FooterOne />
           {/* footer area */}
         </div>
       </div>

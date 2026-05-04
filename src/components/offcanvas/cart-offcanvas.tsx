@@ -48,7 +48,7 @@ export default function CartOffcanvas({openCartMini,setOpenCartMini}:IProps) {
               {/* card item start */}
               <div className="cartmini__widget-item">
                 <div className="cartmini__thumb">
-                  <Link href="/portfolio-details-1">
+                  <Link href="/our-work">
                     <Image
                       src="/assets/img/inner-blog/blog-sidebar/rc-post/rc-1.jpg"
                       alt="cart-img"
@@ -59,7 +59,7 @@ export default function CartOffcanvas({openCartMini,setOpenCartMini}:IProps) {
                 </div>
                 <div className="cartmini__content">
                   <h5 className="cartmini__title">
-                    <Link href="/portfolio-details-1">Featured Project</Link>
+                    <Link href="/our-work">Featured Project</Link>
                   </h5>
                   <div className="cartmini__price-wrapper">
                     <span className="cartmini__price">$46.00</span>
@@ -81,7 +81,7 @@ export default function CartOffcanvas({openCartMini,setOpenCartMini}:IProps) {
             </div>
             <div className="cartmini__checkout-btn">
               <Link
-                href="/portfolio-standard"
+                href="/our-work"
                 className="tp-btn-black-2 text-center mb-10 w-100"
               >
                 view portfolio

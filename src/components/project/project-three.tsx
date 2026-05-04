@@ -42,7 +42,7 @@ export default function ProjectThree() {
           <div className="col-xl-12">
             {portfolio_data.map((item) => (
               <div key={item.id} className="tp-project-4-bg project-panel">
-                <Link href="/portfolio-details-1">
+                <Link href="/our-work">
                   <div className="tp-project-4-thumb">
                     <Image src={item.img} alt="port-thumb" style={{ height: "auto" }} /> 
                   </div>

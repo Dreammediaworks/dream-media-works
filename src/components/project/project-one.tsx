@@ -5,12 +5,9 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
 // project images
-import p_1 from "@/assets/img/home-01/project/project-1-1.jpg";
-import p_2 from "@/assets/img/home-01/project/project-1-2.jpg";
-import p_3 from "@/assets/img/home-01/project/project-1-3.jpg";
-import p_4 from "@/assets/img/home-01/project/project-1-4.jpg";
-import p_5 from "@/assets/img/home-01/project/project-1-5.jpg";
-import p_6 from "@/assets/img/home-01/project/project-1-6.jpg";
+import { branding1, branding3 } from "@/assets/img/our-work/branding";
+import { concept1, concept4 } from "@/assets/img/our-work/concept";
+import { visual1, visual3 } from "@/assets/img/our-work/visual";
 
 // type
 type IProject = {
@@ -25,37 +22,37 @@ const project_data: IProject[] = [
     id: 1,
     cls: "tp-project-mr",
     cls_2: "height-1",
-    img: p_1,
+    img: branding1,
   },
   {
     id: 2,
     cls: "text-end",
     cls_2: "height-2 d-inline-flex justify-content-end",
-    img: p_2,
+    img: concept1,
   },
   {
     id: 3,
     cls: "tp-project-mr",
     cls_2: "height-3",
-    img: p_3,
+    img: visual1,
   },
   {
     id: 4,
     cls: "",
     cls_2: "height-4",
-    img: p_4,
+    img: branding3,
   },
   {
     id: 5,
     cls: "tp-project-ml",
     cls_2: "height-5",
-    img: p_5,
+    img: concept4,
   },
   {
     id: 6,
     cls: "",
     cls_2: "height-6",
-    img: p_6,
+    img: visual3,
   },
 ];
 

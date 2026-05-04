@@ -4,9 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import HeaderMenus from "./header-menus";
 import MobileOffcanvas from "@/components/offcanvas/mobile-offcanvas";
-import logo from "../../../public/assets/img/logo/logo.png";
-import logo2 from "../../../public/assets/img/logo/dmw.png";
-import logoWhite from "../../../public/assets/img/logo/logo-white.png";
+import logo from "@/assets/img/logo/dmw.png";
+import logoWhite from "@/assets/img/logo/dmw-white.png";
 import useStickyHeader from "@/hooks/use-sticky-header";
 
 const HeaderOne = () => {
@@ -28,19 +27,19 @@ const HeaderOne = () => {
             <div className="row align-items-center">
               <div className="col-xl-1 col-lg-2 col-6">
                 <div className="tp-header-logo">
-                  <Link className="logo-1" href="/home-1">
+                  <Link className="logo-1" href="/home">
                     <Image
                       style={{ width: "auto", height: "auto" }}
-                      src={logo2}
+                      src={logo}
                       alt="logo"
                       width={85}
                       height={26}
                     />
                   </Link>
-                  <Link className="logo-2" href="/home-1">
+                  <Link className="logo-2" href="/home">
                     <Image
                       style={{ width: "auto", height: "auto" }}
-                      src={logo2}
+                      src={logoWhite}
                       alt="logo"
                       width={85}
                       height={26}

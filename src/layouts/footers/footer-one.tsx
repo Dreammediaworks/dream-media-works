@@ -2,11 +2,10 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/assets/img/logo/logo-white.png";
+import logo from "@/assets/img/logo/dmw-white.png";
 import { footerOneAnimation, footerTwoAnimation } from "@/utils/footer-anim";
 import menu_data from "@/data/menu-data";
 import { contactData, socialData } from "@/data/contact-data";
-import logo2 from "../../../public/assets/img/logo/dmw.png";
 
 export default function FooterOne() {
   const [isActive, setIsActive] = React.useState(false);
@@ -103,8 +102,8 @@ export default function FooterOne() {
             <div className="row align-items-center">
               <div className="col-xl-6 col-md-4">
                 <div className="tp-copyright-logo text-center text-md-start">
-                  <Link href="/home-1">
-                    <Image src={logo2} alt="logo" />
+                  <Link href="/home">
+                    <Image src={logo} alt="logo" />
                   </Link>
                 </div>
               </div>
