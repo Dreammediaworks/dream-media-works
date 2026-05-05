@@ -30,35 +30,35 @@ const ProjectTextLine = () => {
       className="tp-project-textline tp-project-effect mb-115"
       data-scrub="0.0001"
     >
-      <span className="textline-2">Our</span>
-      <span className="textline-1">
-        W
-        <span>
+      <span className="textline-2 dmw-text-orange">Our</span>
+      <span className="textline-1 dmw-text-orange">
+        WO
+        {/* <span>
           <Image src={shape} alt="shape" />
-        </span>
+        </span> */}
         rks
       </span>
-      <span className="textline-2">Our</span>
+      <span className="textline-2 dmw-text-orange">Our</span>
 
-      <span className="textline-2">Our</span>
-      <span className="textline-1">
-        W
-        <span>
+      <span className="textline-2 dmw-text-orange">Our</span>
+      <span className="textline-1 dmw-text-orange">
+        WO
+        {/* <span>
           <Image src={shape} alt="shape" />
-        </span>
+        </span> */}
         rks
       </span>
-      <span className="textline-2">Our</span>
+      <span className="textline-2 dmw-text-orange">Our</span>
 
-      <span className="textline-2">Our</span>
-      <span className="textline-1">
+      <span className="textline-2 dmw-text-orange">Our</span>
+      <span className="textline-1 dmw-text-orange">
         W
         <span>
           <Image src={shape} alt="shape" />
         </span>
         rks
       </span>
-      <span className="textline-2">Our</span>
+      <span className="textline-2 dmw-text-orange">Our</span>
     </div>
   );
 };

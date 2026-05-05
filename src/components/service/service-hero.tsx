@@ -15,9 +15,9 @@ export default function ServiceHero() {
               <h4 className="sv-hero-title tp-char-animation">
                 Experience <br /> the best services.
               </h4>
-              <p className="tp_fade_bottom">
+              {/* <p className="tp_fade_bottom">
                 Fulfilled direction use continual set him propriety continued.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
@@ -29,15 +29,15 @@ export default function ServiceHero() {
                   data-speed=".7"
                   src={ser_hero}
                   alt="ser_hero-img"
-                  style={{height:"auto"}}
+                  style={{ height: "auto" }}
                 />
               </div>
-              <Image
+              {/* <Image
                 className="sv-hero-thumb-shape d-none d-lg-block"
                 src={ser_hero_shape}
                 alt="ser_hero-shape"
-                style={{height:"auto"}}
-              />
+                style={{ height: "auto" }}
+              /> */}
             </div>
           </div>
         </div>

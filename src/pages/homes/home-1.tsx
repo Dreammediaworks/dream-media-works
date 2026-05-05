@@ -29,6 +29,7 @@ import FooterOne from "@/layouts/footers/footer-one";
 // images
 import shape_1 from "@/assets/img/home-01/footer/footer-circle-shape-1.png";
 import shape_2 from "@/assets/img/home-01/footer/footer-circle-shape-2.png";
+import logoWhite from "@/assets/img/logo/dmw-white.png";
 
 // animation
 import { videoAnimOne } from "@/utils/video-anim";
@@ -142,7 +143,12 @@ const HomeMain = () => {
         <Link href="/contact">
           <div className="tp-footer-shape p-relative">
             <Image className="img-1" src={shape_1} alt="shape" />
-            <Image className="img-2" src={shape_2} alt="shape" />
+            <Image
+              className="img-2"
+              src={logoWhite}
+              alt="shape"
+              style={{ width: "60px", height: "60px", objectFit: "contain" }}
+            />
             <span></span>
           </div>
         </Link>

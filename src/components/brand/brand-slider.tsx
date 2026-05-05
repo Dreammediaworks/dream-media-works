@@ -52,7 +52,12 @@ export default function BrandSlider() {
             <Image
               src={b}
               alt="brand"
-              style={{ width: "100%", height: "100%", objectFit: "contain" }}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "contain",
+                filter: "none",
+              }}
             />
           </div>
         ))}

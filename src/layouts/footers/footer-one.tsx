@@ -48,13 +48,13 @@ export default function FooterOne() {
                         <h4 className="tp-footer-title tp_fade_bottom">
                           Say hello at:
                         </h4>
-                        <div className="tp-footer-widget-info">
+                        <div className="tp-footer-widget-info gap-3">
                           <div className="tp-footer-widget-info-mail tp_fade_bottom">
                             <Link href={`mailto:${contactData?.email}`}>
                               {contactData?.email}
                             </Link>
                           </div>
-                          <div className="tp-footer-widget-info-mail tp_fade_bottom">
+                          <div className="tp-footer-widget-info-mail tp_fade_bottom mt-3">
                             <Link href={`tel:${contactData?.phone}`}>
                               {contactData?.phone}
                             </Link>
@@ -77,7 +77,9 @@ export default function FooterOne() {
                             <Link href="#">Facebook</Link>
                           </li> */}
                           <li className="tp_fade_bottom">
-                            <Link href={socialData?.instagram}>Instagram</Link>
+                            <a href={socialData?.instagram} target="_blank">
+                              Instagram
+                            </a>
                           </li>
                           {/* <li className="tp_fade_bottom">
                             <Link href="#">Behance</Link>

@@ -57,7 +57,7 @@ export default function MobileOffcanvas({
             <div className="tp-main-menu-mobile d-xl-none">
               <MobileMenus />
             </div>
-            <div className="tp-offcanvas-gallery">
+            {/* <div className="tp-offcanvas-gallery">
               <div className="row gx-2">
                 {gallery_images.map((item, i) => (
                   <div className="col-md-3 col-3" key={i}>
@@ -73,7 +73,7 @@ export default function MobileOffcanvas({
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
             <div className="tp-offcanvas-contact">
               <h3 className="tp-offcanvas-title sm">Information</h3>
 

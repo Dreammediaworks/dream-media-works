@@ -3,10 +3,10 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 // images
-import port_1 from "@/assets/img/inner-service/portfolio/port-2.jpg";
-import port_2 from "@/assets/img/inner-service/portfolio/port-3.jpg";
-import port_3 from "@/assets/img/inner-service/portfolio/port-4.jpg";
-import port_4 from "@/assets/img/inner-service/portfolio/port-1.jpg";
+import port_1 from "@/assets/img/our-work/branding/branding1.png";
+import port_2 from "@/assets/img/our-work/branding/branding2.png";
+import port_3 from "@/assets/img/our-work/branding/branding3.png";
+import port_4 from "@/assets/img//our-work/branding/branding4.png";
 
 // images
 const port_images = [port_1, port_1, port_2, port_3, port_4, port_1, port_2];
@@ -20,9 +20,13 @@ export default function LineImgSlider() {
             <div
               key={index}
               className={`sv-port-thumb port-thumb-${index % 2 === 0 ? 1 : 2}`}
-              style={{marginRight: '40px'}}
+              style={{ marginRight: "40px" }}
             >
-              <Image src={imgSrc} alt="port-img" />
+              <Image
+                src={imgSrc}
+                alt="port-img"
+                style={{ maxHeight: "200px", width: "auto", minWidth: "200px" }}
+              />
             </div>
           ))}
         </Marquee>

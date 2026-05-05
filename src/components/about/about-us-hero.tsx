@@ -37,9 +37,9 @@ export default function AboutUsHero() {
               data-lag="0.2"
               data-stagger="0.08"
             >
-              <span className="ab-inner-hero-subtitle">
+              {/* <span className="ab-inner-hero-subtitle">
                 Digital <br /> creative agency
-              </span>
+              </span> */}
               <h1 className="ab-inner-hero-title tp-char-animation">
                 Building Digital Presence
               </h1>

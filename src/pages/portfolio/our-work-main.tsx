@@ -81,9 +81,8 @@ const OurWorkMain = () => {
                     </div>
                     <div className="tm-hero-text">
                       <p className="tp_title_anim">
-                        We’re a diverse team that works as fancies attention to
-                        details, enjoys beers on Friday nights and aspires to
-                        design the dent in the universe.
+                        Every brand here trusted us with their story. Here’s how
+                        we told it.
                       </p>
                     </div>
                   </div>
