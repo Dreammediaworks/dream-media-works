@@ -31,10 +31,7 @@ const HeroBannerOne = () => {
                 <h1 className="tp-hero-title tp_fade_bottom">
                   <span className="p-relative">
                     Dream
-                    <span
-                      className="tp-hero-subtitle d-none d-lg-block"
-                      style={{ left: "-20%" }}
-                    >
+                    <span className="tp-hero-subtitle d-none d-lg-block">
                       Hello <br /> People! We're
                     </span>
                     <span className="tp-hero-shape-2 d-none d-md-block">
@@ -50,8 +47,21 @@ const HeroBannerOne = () => {
                   Media
                   <span className="tp-hero-title-img">
                     <Image
-                      className="tp-zoom-img"
-                      src="/assets/img/logo/logo-dmw-whitebg2.png"
+                      className="tp-zoom-img tp-hero-theme-logo tp-hero-theme-logo-light"
+                      src="/assets/img/logo/dmw-logo-white-rec-bg.png"
+                      alt="hero-img"
+                      width={270}
+                      height={160}
+                      style={{
+                        height: "auto",
+                        borderRadius: "150px",
+                        maxHeight: "150px",
+                        objectFit: "cover",
+                      }}
+                    />
+                    <Image
+                      className="tp-zoom-img tp-hero-theme-logo tp-hero-theme-logo-dark"
+                      src="/assets/img/logo/dmw-logo-black-rec-bg.png"
                       alt="hero-img"
                       width={270}
                       height={160}
@@ -68,15 +78,12 @@ const HeroBannerOne = () => {
               </div>
             </div>
             <div className="tp-hero-content tp_fade_bottom">
-              <p>
-                <span className="dmw-text-orange">
-                  Great brands don’t wait to be discovered they make it
-                  impossible to be ignored. At Dream MediaWorks, we blend
-                  innovation, strategy, and creativity to put you exactly where
-                  you need to be.
-                </span>
-                <br />
-                <span className="dmw-text-orange">
+              <p className="dmw-text-orange">
+                Great brands don’t wait to be discovered they make it impossible
+                to be ignored. At Dream Media Works, we blend innovation,
+                strategy, and creativity to put you exactly where you need to
+                be,{" "}
+                <span style={{ textDecoration: "underline", marginLeft: "0" }}>
                   Ambitious brands, meet your people.
                 </span>
               </p>

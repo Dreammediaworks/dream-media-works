@@ -24,7 +24,7 @@ const location_data: LocationData[] = [
   {
     id: 1,
     img: location_1,
-    country: "India",
+    country: "Chennai, India",
     // time: "12:00 pm GMT+2",
     location_title: "Base Create",
     address: contactData?.address,
@@ -83,7 +83,10 @@ const ContactLocation = () => {
                 </div>
                 <div className="col-xl-5">
                   <div className="cn-contact-right-wrap d-flex align-items-start justify-content-between">
-                    <div className="cn-contact-right">
+                    <div
+                      className="cn-contact-right"
+                      style={{ marginRight: "50px" }}
+                    >
                       <div className="cn-contact-location">
                         <span className="cn-contact-location-title">
                           {item.location_title}

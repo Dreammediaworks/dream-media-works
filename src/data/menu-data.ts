@@ -133,7 +133,7 @@ const menu_data: IMenuDT[] = [
   {
     id: 6,
     title: "Shehnai Inweds",
-    link: "/shehnai-inweds/home",
+    link: "/shehnai-inweds",
     // dropdown_menus: [
     //   { title: "About Us", link: "/about-us" },
     //   { title: "Our Services", link: "/service" },

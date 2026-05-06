@@ -1,18 +1,18 @@
-@forward '../../public/assets/css/bootstrap.min.css'; 
-@forward '../../public/assets/scss/main.scss';
+@forward "../../public/assets/css/bootstrap.min.css";
+@forward "../../public/assets/scss/main.scss";
 
 .dmw-text-orange {
   color: #ff8a00 !important;
 }
 
-// Video modal style 
+// Video modal style
 .video-modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.9); 
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 9999;
   display: flex;
   justify-content: center;
@@ -21,7 +21,7 @@
 
 .video-modal-container {
   width: 90%;
-  max-width: 1200px; 
+  max-width: 1200px;
   position: relative;
 }
 
@@ -92,15 +92,14 @@
 
 .dmw-about-story-block h2,
 .dmw-about-story-block h3 {
-  font-family: var(--tp-ff-heading);
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1.06;
   color: #030303;
 }
 
 .dmw-about-story-block h2 {
   max-width: 560px;
-  font-size: clamp(32px, 3.5vw, 48px);
+  font-size: clamp(36px, 3.5vw, 52px);
 }
 
 .dmw-about-story-block h2 span,
@@ -115,13 +114,13 @@
 }
 
 .dmw-about-story-block h3 {
-  font-size: clamp(32px, 3.6vw, 50px);
+  font-size: clamp(36px, 3.6vw, 54px);
 }
 
 .dmw-about-story-block p {
   font-family: var(--tp-ff-p);
   color: #626262;
-  font-size: clamp(15px, 1.25vw, 17px);
+  font-size: clamp(17px, 1.25vw, 19px);
   line-height: 1.22;
 }
 
@@ -144,7 +143,7 @@
 }
 
 .dmw-about-story-center p {
-  font-size: clamp(17px, 1.8vw, 21px);
+  font-size: clamp(19px, 1.8vw, 23px);
   font-style: italic;
 }
 
@@ -196,8 +195,8 @@
 }
 
 .dmw-about-story-closing p {
-  font-family: var(--tp-ff-heading);
-  font-size: clamp(18px, 2.1vw, 24px);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(22px, 2.1vw, 28px);
   font-weight: 800;
   line-height: 1.08;
 }

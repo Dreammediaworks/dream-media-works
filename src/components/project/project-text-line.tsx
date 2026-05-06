@@ -31,32 +31,32 @@ const ProjectTextLine = () => {
       data-scrub="0.0001"
     >
       <span className="textline-2 dmw-text-orange">Our</span>
-      <span className="textline-1 dmw-text-orange">
+      <span className="textline-1">
         WO
         {/* <span>
           <Image src={shape} alt="shape" />
         </span> */}
-        rks
+        rk
       </span>
       <span className="textline-2 dmw-text-orange">Our</span>
 
       <span className="textline-2 dmw-text-orange">Our</span>
-      <span className="textline-1 dmw-text-orange">
+      <span className="textline-1">
         WO
         {/* <span>
           <Image src={shape} alt="shape" />
         </span> */}
-        rks
+        rk
       </span>
       <span className="textline-2 dmw-text-orange">Our</span>
 
       <span className="textline-2 dmw-text-orange">Our</span>
-      <span className="textline-1 dmw-text-orange">
+      <span className="textline-1">
         W
         <span>
           <Image src={shape} alt="shape" />
         </span>
-        rks
+        rk
       </span>
       <span className="textline-2 dmw-text-orange">Our</span>
     </div>

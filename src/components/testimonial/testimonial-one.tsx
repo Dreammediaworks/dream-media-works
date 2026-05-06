@@ -8,7 +8,7 @@ import { SwiperOptions } from "swiper/types";
 const testimonial_data = [
   {
     id: 1,
-    desc: `“It’s not just what you say that stirs people, It’s the way that you say it.”`,
+    desc: `It’s not just what you say that stirs people, It’s the way that you say it`,
     name: "Bill Bernbach",
     designation: "(Father of modern advertising)",
   },
@@ -57,7 +57,7 @@ const TestimonialOne = () => {
     <div className="tp-testimonial-area pb-120 pt-120">
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-xl-10">
+          <div className="col-xl-12">
             <div className="tp-testimonial-slider-wrapper p-relative">
               <div className="tp-testimonial-arrow-box d-none d-lg-block">
                 <button className="tp-testimonial-prev">
@@ -79,7 +79,12 @@ const TestimonialOne = () => {
                 {testimonial_data.map((item) => (
                   <SwiperSlide key={item.id}>
                     <div className="tp-testimonial-item text-center">
-                      <p>{item.desc}</p>
+                      <p
+                        className="dmw-text-orange"
+                        style={{ fontSize: "34px" }}
+                      >
+                        {item.desc}
+                      </p>
                       <span>
                         <em>{item.name}</em> - {item.designation}
                       </span>

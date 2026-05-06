@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import HeaderMenus from "./header-menus";
 import MobileOffcanvas from "@/components/offcanvas/mobile-offcanvas";
-import logo from "@/assets/img/logo/dmw.png";
-import logoWhite from "@/assets/img/logo/dmw-white.png";
+import logo from "@/assets/img/logo/dmw-logo-black.png";
+import logoWhite from "@/assets/img/logo/dmw-logo-white.png";
 import useStickyHeader from "@/hooks/use-sticky-header";
 
 const HeaderOne = () => {

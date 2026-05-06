@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Behance, CloseTwo, Dribble, InstagramTwo, Youtube } from "../svg";
 
 // images
-import logo from "@/assets/img/logo/dmw.png";
 import gallery_1 from "@/assets/img/menu/offcanvas/offcanvas-1.jpg";
 import gallery_2 from "@/assets/img/menu/offcanvas/offcanvas-2.jpg";
 import gallery_3 from "@/assets/img/menu/offcanvas/offcanvas-3.jpg";
@@ -11,7 +10,8 @@ import gallery_4 from "@/assets/img/menu/offcanvas/offcanvas-4.jpg";
 import MobileMenus from "./mobile-menus";
 import Link from "next/link";
 import { contactData, socialData } from "@/data/contact-data";
-
+import logo from "@/assets/img/logo/dmw-logo-black.png";
+import logoWhite from "@/assets/img/logo/dmw-logo-white.png";
 const gallery_images = [gallery_1, gallery_2, gallery_3, gallery_4];
 
 // prop type
@@ -30,15 +30,26 @@ export default function MobileOffcanvas({
         <div className="tp-offcanvas-wrapper">
           <div className="tp-offcanvas-top d-flex align-items-center justify-content-between">
             <div className="tp-offcanvas-logo">
-              <Link href="#">
-                <Image
-                  style={{ width: "auto", height: "auto" }}
-                  src={logo}
-                  alt="logo"
-                  width={85}
-                  height={26}
-                />
-              </Link>
+              <div className="tp-header-logo">
+                <Link className="logo-1" href="/home">
+                  <Image
+                    style={{ width: "auto", height: "auto" }}
+                    src={logo}
+                    alt="logo"
+                    width={85}
+                    height={26}
+                  />
+                </Link>
+                <Link className="logo-2" href="/home">
+                  <Image
+                    style={{ width: "auto", height: "auto" }}
+                    src={logoWhite}
+                    alt="logo"
+                    width={85}
+                    height={26}
+                  />
+                </Link>
+              </div>
             </div>
             <div className="tp-offcanvas-close">
               <button

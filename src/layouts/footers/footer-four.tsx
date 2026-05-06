@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import logo from "@/assets/img/logo/dmw-white.png";
+import logo from "@/assets/img/logo/dmw-logo-white.png";
 import { RightArrow, SvgBgSm } from "@/components/svg";
 import Link from "next/link";
 

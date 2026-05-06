@@ -83,7 +83,7 @@ const AboutStorySection = () => {
 
         <div className="dmw-about-story-block dmw-about-story-copy dmw-about-story-people-copy tp_fade_bottom">
           <p>
-            Dream MediaWorks is built by creators who genuinely care — about
+            Dream Media Works is built by creators who genuinely care about
             design, about results, and about the brands they work with. Based in
             Chennai, we’re a tight-knit team with big-agency thinking and the
             personal attention of a boutique studio.
@@ -100,7 +100,7 @@ const AboutStorySection = () => {
         <div className="dmw-about-story-row">
           <div className="dmw-about-story-block dmw-about-story-left-note tp_fade_bottom">
             <p>
-              We’re still dreaming — bigger, bolder, and with a lot more colour.
+              We’re still dreaming bigger, bolder, and with a lot more colour.
             </p>
           </div>
           <div className="dmw-about-story-block dmw-about-story-heading-note">
