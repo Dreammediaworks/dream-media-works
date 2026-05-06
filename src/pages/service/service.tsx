@@ -76,17 +76,19 @@ const ServiceMain = () => {
             {/* service area */}
 
             {/* brand area */}
-            <div className="tp-brand-4-area pt-120 pb-120">
+            {/* <div className="tp-brand-4-area pt-120 pb-120">
               <div className="container">
                 <div className="row gx-0">
                   <BrandItems />
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* brand area */}
 
             {/* line image slider  */}
-            <LineImgSlider />
+            <div className="pt-80">
+              <LineImgSlider />
+            </div>
             {/* line image slider  */}
 
             {/* big text */}

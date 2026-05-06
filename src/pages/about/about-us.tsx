@@ -52,7 +52,9 @@ const AboutStorySection = () => {
         </div>
 
         <div className="dmw-about-story-block dmw-about-story-right-title">
-          <h3 className="tp-char-animation">What makes us, us?</h3>
+          <h3 className="tp-char-animation">
+            What makes us, <span className="dmw-text-orange">us?</span>
+          </h3>
         </div>
 
         <div className="dmw-about-story-block dmw-about-story-center tp_fade_bottom">
@@ -74,7 +76,9 @@ const AboutStorySection = () => {
         </div>
 
         <div className="dmw-about-story-block dmw-about-story-people">
-          <h3 className="tp-char-animation">The people behind the work</h3>
+          <h3 className="tp-char-animation">
+            <span className="dmw-text-orange">The</span> people behind the work
+          </h3>
         </div>
 
         <div className="dmw-about-story-block dmw-about-story-copy dmw-about-story-people-copy tp_fade_bottom">
@@ -100,7 +104,9 @@ const AboutStorySection = () => {
             </p>
           </div>
           <div className="dmw-about-story-block dmw-about-story-heading-note">
-            <h3 className="tp-char-animation">Where we’re headed</h3>
+            <h3 className="tp-char-animation">
+              Where we’re hea<span className="dmw-text-orange">ded</span>
+            </h3>
           </div>
           <div className="dmw-about-story-block dmw-about-story-right-note tp_fade_bottom">
             <p>
@@ -110,8 +116,8 @@ const AboutStorySection = () => {
           </div>
         </div>
 
-        <div className="dmw-about-story-block dmw-about-story-closing tp_fade_bottom">
-          <p>
+        <div className="dmw-about-story-block dmw-about-story-closing tp_fade_bottom dmw-text-orange">
+          <p className="dmw-text-orange">
             Building brands that don’t wait to be discovered
             <br />
             we make it impossible to be ignored.

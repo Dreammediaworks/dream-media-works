@@ -19,7 +19,7 @@ const service_data = [
   {
     id: 2,
     title: "Branding",
-    desc: "Defining the soul of your business through cohesive visuals and a narrative that commands market presence.",
+    desc: "Defining the soul of your business through cohesive visuals and a narrative that commands market presence",
     icon: s_2,
   },
   {
@@ -37,7 +37,7 @@ const service_data = [
   {
     id: 4,
     title: "Game Plan",
-    desc: "A synchronized roadmap of high-impact tactics engineered to achieve your most ambitious business objectives.",
+    desc: "A synchronized roadmap of high-impact tactics engineered to achieve your most ambitious business objectives",
     icon: s_1,
   },
 ];
@@ -52,7 +52,7 @@ const ServiceOne = () => {
               <span className="tp-section-subtitle subtitle-position tp-char-animation">
                 I Think a lot
               </span>
-              <h4 className="tp-section-title tp-char-animation">
+              <h4 className="tp-section-title tp-char-animation dmw-text-orange">
                 Thoughtful
                 <br />
                 <span>Process</span>

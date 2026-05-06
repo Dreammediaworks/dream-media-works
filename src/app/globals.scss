@@ -1,6 +1,9 @@
 @forward '../../public/assets/css/bootstrap.min.css'; 
 @forward '../../public/assets/scss/main.scss';
 
+.dmw-text-orange {
+  color: #ff8a00 !important;
+}
 
 // Video modal style 
 .video-modal-overlay {

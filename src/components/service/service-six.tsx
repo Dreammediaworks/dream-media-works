@@ -175,7 +175,7 @@ export default function ServiceSix() {
                           ))}
                         </ul>
                       </div>
-                      <div className="sv-service-btn">
+                      {/* <div className="sv-service-btn">
                         <Link
                           className="tp-btn-zikzak zikzak-inner p-relative"
                           href="/service-details"
@@ -186,7 +186,7 @@ export default function ServiceSix() {
                           </span>
                           <ShapeTwo />
                         </Link>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>

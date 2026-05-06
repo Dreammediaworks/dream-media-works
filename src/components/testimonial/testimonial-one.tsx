@@ -8,11 +8,9 @@ import { SwiperOptions } from "swiper/types";
 const testimonial_data = [
   {
     id: 1,
-    desc: `“Nulla ut enim non magna placerat scelerisque sed eu dolor. Sed eu faucibus
-    turpis. Ut bibendum tempor tempus. Ut scelerisque est
-    posuere ex pretium laoreet.”`,
-    name: "Louis Fantun",
-    designation: "Designer",
+    desc: `“It’s not just what you say that stirs people, It’s the way that you say it.”`,
+    name: "Bill Bernbach",
+    designation: "(Father of modern advertising)",
   },
   // {
   //   id: 2,

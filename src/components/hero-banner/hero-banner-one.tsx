@@ -51,7 +51,7 @@ const HeroBannerOne = () => {
                   <span className="tp-hero-title-img">
                     <Image
                       className="tp-zoom-img"
-                      src="/assets/img/logo/logo-dmw-whitebg.png"
+                      src="/assets/img/logo/logo-dmw-whitebg2.png"
                       alt="hero-img"
                       width={270}
                       height={160}
@@ -69,12 +69,16 @@ const HeroBannerOne = () => {
             </div>
             <div className="tp-hero-content tp_fade_bottom">
               <p>
-                Great brands don’t wait to be discovered they make it impossible
-                to be ignored. At Dream MediaWorks, we blend innovation,
-                strategy, and creativity to put you exactly where you need to
-                be.
+                <span className="dmw-text-orange">
+                  Great brands don’t wait to be discovered they make it
+                  impossible to be ignored. At Dream MediaWorks, we blend
+                  innovation, strategy, and creativity to put you exactly where
+                  you need to be.
+                </span>
                 <br />
-                Ambitious brands, meet your people.
+                <span className="dmw-text-orange">
+                  Ambitious brands, meet your people.
+                </span>
               </p>
             </div>
           </div>
