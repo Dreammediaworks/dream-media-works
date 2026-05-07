@@ -92,7 +92,7 @@ const ServiceMain = () => {
             {/* line image slider  */}
 
             {/* big text */}
-            <BigText />
+            {/* <BigText /> */}
             {/* big text */}
           </main>
 

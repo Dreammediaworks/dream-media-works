@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/assets/img/logo/dmw-white.png";
+import logo from "@/assets/img/logo/dmw-logo-white.png";
 import { footerOneAnimation, footerTwoAnimation } from "@/utils/footer-anim";
 import menu_data from "@/data/menu-data";
 import { contactData, socialData } from "@/data/contact-data";

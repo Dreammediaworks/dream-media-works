@@ -29,7 +29,7 @@ import FooterOne from "@/layouts/footers/footer-one";
 // images
 import shape_1 from "@/assets/img/home-01/footer/footer-circle-shape-1.png";
 import shape_2 from "@/assets/img/home-01/footer/footer-circle-shape-2.png";
-import logoWhite from "@/assets/img/logo/dmw-white.png";
+import logoWhite from "@/assets/img/logo/dmw-logo-white.png";
 
 // animation
 import { videoAnimOne } from "@/utils/video-anim";

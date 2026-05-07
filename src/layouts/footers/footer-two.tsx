@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/assets/img/logo/dmw-white.png";
-import logo_2 from "@/assets/img/logo/dmw.png";
+import logo from "@/assets/img/logo/dmw-logo-white.png";
+import logo_2 from "@/assets/img/logo/dmw-logo-black.png";
 import { RightArrow } from "@/components/svg";
 
 // prop type

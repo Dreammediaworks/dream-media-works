@@ -80,9 +80,8 @@ const OurWorkMain = () => {
                       </h4>
                     </div>
                     <div className="tm-hero-text">
-                      <p className="tp_title_anim">
-                        Every brand here trusted us with their story. Here’s how
-                        we told it.
+                      <p className="tp_title_anim our-work-hero-copy">
+                        Every brand here trusted us with their story. Here’s how we told it.
                       </p>
                     </div>
                   </div>
@@ -96,7 +95,7 @@ const OurWorkMain = () => {
             {/* portfolio area */}
 
             {/* big text */}
-            <BigText />
+            {/* <BigText /> */}
             {/* big text */}
           </main>
 

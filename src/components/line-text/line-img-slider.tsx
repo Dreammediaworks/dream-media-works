@@ -3,13 +3,16 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 // images
-import port_1 from "@/assets/img/our-work/branding/branding1.png";
+import port_1 from "@/assets/img/our-work/concept/concept3.png";
 import port_2 from "@/assets/img/our-work/branding/branding2.png";
-import port_3 from "@/assets/img/our-work/branding/branding3.png";
+import port_3 from "@/assets/img/our-work/concept/concept4.png";
 import port_4 from "@/assets/img//our-work/branding/branding4.png";
+import port_5 from "@/assets/img//our-work/concept/concept7.png";
+import port_6 from "@/assets/img//our-work/visual/visual2.png";
+import port_7 from "@/assets/img//our-work/visual/visual4.png";
 
 // images
-const port_images = [port_1, port_1, port_2, port_3, port_4, port_1, port_2];
+const port_images = [port_1, port_2, port_3, port_4, port_5, port_6, port_7];
 
 export default function LineImgSlider() {
   return (

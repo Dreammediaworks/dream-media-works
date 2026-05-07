@@ -7,7 +7,14 @@ const HeaderMenus = () => {
     <ul>
       {menu_data.map((menu) => (
         <li key={menu.id} className="has-dropdown">
-          <Link href={menu.link}>{menu.title}</Link>
+          {menu?.id == 6 ? (
+            <Link href={menu.link} style={{ color: "#e89eb8" }}>
+              {menu.title}
+            </Link>
+          ) : (
+            <Link href={menu.link}>{menu.title}</Link>
+          )}
+
           {menu.home_menus ? (
             <div className="tp-submenu submenu tp-mega-menu">
               <div className="tp-menu-fullwidth">
@@ -102,10 +109,7 @@ const HeaderMenus = () => {
                         <div className="tp-shop-banner-content">
                           <h4 className="tp-shop-banner-title">Featured</h4>
                           <span>Explore the selected portfolio pages</span>
-                          <Link
-                            className="tp-shop-btn"
-                            href="/our-work"
-                          >
+                          <Link className="tp-shop-btn" href="/our-work">
                             View Work
                           </Link>
                         </div>

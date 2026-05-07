@@ -272,9 +272,17 @@
             line-height: 26px;
             color: #5D5D63;
             max-width: 460px;
+            &.our-work-hero-copy{
+                font-size: 22px;
+                max-width: none;
+                white-space: nowrap;
+            }
             @media #{$xs}{
                 & br{
                     display: none;
+                }
+                &.our-work-hero-copy{
+                    white-space: normal;
                 }
             }
         }
