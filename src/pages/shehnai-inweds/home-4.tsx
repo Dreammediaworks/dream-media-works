@@ -1,6 +1,6 @@
 "use client";
 import { gsap } from "gsap";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import useScrollSmooth from "@/hooks/use-scroll-smooth";
 import { ScrollSmoother, ScrollTrigger, SplitText } from "@/plugins";
 import { useGSAP } from "@gsap/react";
@@ -17,13 +17,11 @@ import ProjectFour from "@/components/project/project-four";
 import VideoThree from "@/components/video/video-three";
 import ServiceFour from "@/components/service/service-four";
 import ContactOne from "@/components/contact/contact-one";
-import FooterFour from "@/layouts/footers/footer-four";
 import { textInvert } from "@/utils/text-invert";
 import { fadeAnimation, revelAnimationOne } from "@/utils/title-animation";
 import { projectThreeAnimation } from "@/utils/project-anim";
 import { ctaAnimation } from "@/utils/cta-anim";
 import FooterOne from "@/layouts/footers/footer-one";
-import HeaderOne from "@/layouts/headers/header-one";
 
 const HomeFourMain = () => {
   useScrollSmooth();
@@ -49,7 +47,7 @@ const HomeFourMain = () => {
     <Wrapper>
       <div className="shehnai-pink-theme">
         {/* header area start */}
-        <HeaderOne />
+        <HeaderFour />
         {/* header area end */}
 
         <div id="smooth-wrapper">
