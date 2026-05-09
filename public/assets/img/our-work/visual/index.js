@@ -10,6 +10,7 @@ import visual9 from "./visual9.png";
 import visual10 from "./visual10.png";
 import visual11 from "./visual11.png";
 import visual12 from "./visual12.png";
+import visual13 from "./visual13.png";
 
 export {
   visual1,
@@ -24,4 +25,5 @@ export {
   visual10,
   visual11,
   visual12,
+  visual13,
 };

@@ -45,6 +45,7 @@ import {
   visual10,
   visual11,
   visual12,
+  visual13,
   visual2,
   visual3,
   visual4,
@@ -128,6 +129,7 @@ export const ourWorkCategories: OurWorkCategory[] = [
       visual10,
       visual11,
       visual12,
+      visual13,
     ],
   },
   {

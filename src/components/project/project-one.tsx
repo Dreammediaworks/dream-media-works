@@ -5,9 +5,10 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
 // project images
-import { branding1, branding3 } from "@/assets/img/our-work/branding";
-import { concept1, concept4 } from "@/assets/img/our-work/concept";
-import { visual1, visual3 } from "@/assets/img/our-work/visual";
+import { branding7 } from "@/assets/img/our-work/branding";
+import { creative15 } from "@/assets/img/our-work/creative";
+import { concept9, concept12 } from "@/assets/img/our-work/concept";
+import { visual12, visual13 } from "@/assets/img/our-work/visual";
 
 // type
 type IProject = {
@@ -22,37 +23,37 @@ const project_data: IProject[] = [
     id: 1,
     cls: "tp-project-mr",
     cls_2: "height-1",
-    img: branding1,
+    img: branding7,
   },
   {
     id: 2,
     cls: "text-end",
     cls_2: "height-2 d-inline-flex justify-content-end",
-    img: concept1,
+    img: concept9,
   },
   {
     id: 3,
     cls: "tp-project-mr",
     cls_2: "height-3",
-    img: visual1,
+    img: visual12,
   },
   {
     id: 4,
     cls: "",
     cls_2: "height-4",
-    img: branding3,
+    img: concept12,
   },
   {
     id: 5,
     cls: "tp-project-ml",
     cls_2: "height-5",
-    img: concept4,
+    img: visual13,
   },
   {
     id: 6,
     cls: "",
     cls_2: "height-6",
-    img: visual3,
+    img: creative15,
   },
 ];
 
