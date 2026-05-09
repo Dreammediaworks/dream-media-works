@@ -8,7 +8,7 @@ const HeaderMenus = () => {
       {menu_data.map((menu) => (
         <li key={menu.id} className="has-dropdown">
           {menu?.id == 6 ? (
-            <Link href={menu.link} style={{ color: "#e89eb8" }}>
+            <Link href={menu.link} style={{ color: "#b3026e" }}>
               {menu.title}
             </Link>
           ) : (

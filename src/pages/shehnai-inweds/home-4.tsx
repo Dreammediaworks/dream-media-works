@@ -23,6 +23,7 @@ import { fadeAnimation, revelAnimationOne } from "@/utils/title-animation";
 import { projectThreeAnimation } from "@/utils/project-anim";
 import { ctaAnimation } from "@/utils/cta-anim";
 import FooterOne from "@/layouts/footers/footer-one";
+import HeaderOne from "@/layouts/headers/header-one";
 
 const HomeFourMain = () => {
   useScrollSmooth();
@@ -47,7 +48,7 @@ const HomeFourMain = () => {
   return (
     <Wrapper>
       {/* header area start */}
-      <HeaderFour />
+      <HeaderOne />
       {/* header area end */}
 
       <div id="smooth-wrapper">

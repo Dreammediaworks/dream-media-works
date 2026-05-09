@@ -23,7 +23,37 @@ import {
   concept11,
   concept12,
 } from "@/assets/img/our-work/concept";
-import { visual1, visual2, visual3, visual4 } from "@/assets/img/our-work/visual";
+import {
+  creative1,
+  creative2,
+  creative3,
+  creative4,
+  creative5,
+  creative6,
+  creative7,
+  creative8,
+  creative9,
+  creative10,
+  creative11,
+  creative12,
+  creative13,
+  creative14,
+  creative15,
+} from "@/assets/img/our-work/creative";
+import {
+  visual1,
+  visual10,
+  visual11,
+  visual12,
+  visual2,
+  visual3,
+  visual4,
+  visual5,
+  visual6,
+  visual7,
+  visual8,
+  visual9,
+} from "@/assets/img/our-work/visual";
 
 export type OurWorkCategory = {
   slug: string;
@@ -64,7 +94,7 @@ export const ourWorkCategories: OurWorkCategory[] = [
     slug: "concept",
     title: "Concept",
     filterClass: "cat2",
-    featuredImage: concept1,
+    featuredImage: concept4,
     images: [
       concept1,
       concept2,
@@ -84,8 +114,44 @@ export const ourWorkCategories: OurWorkCategory[] = [
     slug: "visual",
     title: "Visual",
     filterClass: "cat3",
-    featuredImage: visual1,
-    images: [visual1, visual2, visual3, visual4],
+    featuredImage: visual3,
+    images: [
+      visual1,
+      visual2,
+      visual3,
+      visual4,
+      visual5,
+      visual6,
+      visual7,
+      visual8,
+      visual9,
+      visual10,
+      visual11,
+      visual12,
+    ],
+  },
+  {
+    slug: "creative",
+    title: "Creative",
+    filterClass: "cat4",
+    featuredImage: creative8,
+    images: [
+      creative1,
+      creative2,
+      creative3,
+      creative4,
+      creative5,
+      creative6,
+      creative7,
+      creative8,
+      creative9,
+      creative10,
+      creative11,
+      creative12,
+      creative13,
+      creative14,
+      creative15,
+    ],
   },
 ];
 
@@ -99,7 +165,7 @@ export const ourWorkItems: OurWorkItem[] = ourWorkCategories.flatMap(
       year: "2024",
       show: category.filterClass,
       slug: category.slug,
-    }))
+    })),
 );
 
 export function getOurWorkCategory(slug: string) {

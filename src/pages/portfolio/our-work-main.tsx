@@ -73,7 +73,7 @@ const OurWorkMain = () => {
                   <div className="col-xl-12">
                     <div className="tm-hero-content">
                       <span className="tm-hero-subtitle">
-                        Dream MeDia WorKs Studio
+                        Dream MeDia WorKs
                       </span>
                       <h4 className="tm-hero-title tp-char-animation">
                         Our latest & great projects
@@ -81,7 +81,8 @@ const OurWorkMain = () => {
                     </div>
                     <div className="tm-hero-text">
                       <p className="tp_title_anim our-work-hero-copy">
-                        Every brand here trusted us with their story. Here’s how we told it.
+                        Every brand here trusted us with their story. Here’s how
+                        we told it.
                       </p>
                     </div>
                   </div>

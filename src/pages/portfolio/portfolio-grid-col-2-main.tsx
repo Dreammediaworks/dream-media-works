@@ -34,7 +34,7 @@ type IProps = {
 const PortfolioGridColTwoMain = ({ categorySlug }: IProps) => {
   useScrollSmooth();
   const category = categorySlug ? getOurWorkCategory(categorySlug) : undefined;
-  const title = category ? category.title : "Classic Grid";
+  const title = category ? category.title : "Our Work";
 
   useEffect(() => {
     document.body.classList.add("tp-magic-cursor");
@@ -85,19 +85,19 @@ const PortfolioGridColTwoMain = ({ categorySlug }: IProps) => {
                   <div className="col-xl-12">
                     <div className="tm-hero-content">
                       <span className="tm-hero-subtitle">
-                        Dream MeDia WorKs Studio
+                        Dream MeDia WorKs
                       </span>
                       <h4 className="tm-hero-title fs-220 tp-char-animation">
                         {title}
                       </h4>
                     </div>
-                    <div className="tm-hero-text tp_title_anim">
+                    {/* <div className="tm-hero-text tp_title_anim">
                       <p>
                         We’re a diverse team that works as fancies attention to
                         details, enjoys beers on Friday nights and aspires to
                         design the dent in the universe.
                       </p>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
