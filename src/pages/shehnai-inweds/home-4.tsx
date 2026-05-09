@@ -23,6 +23,7 @@ import { fadeAnimation, revelAnimationOne } from "@/utils/title-animation";
 import { projectThreeAnimation } from "@/utils/project-anim";
 import { ctaAnimation } from "@/utils/cta-anim";
 import FooterOne from "@/layouts/footers/footer-one";
+import HeaderOne from "@/layouts/headers/header-one";
 
 const HomeFourMain = () => {
   useScrollSmooth();
@@ -46,50 +47,52 @@ const HomeFourMain = () => {
 
   return (
     <Wrapper>
-      {/* header area start */}
-      <HeaderFour />
-      {/* header area end */}
+      <div className="shehnai-pink-theme">
+        {/* header area start */}
+        <HeaderOne />
+        {/* header area end */}
 
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
-          <main>
-            {/* hero area start */}
-            <HeroBannerFour />
-            {/* hero area end */}
+        <div id="smooth-wrapper">
+          <div id="smooth-content">
+            <main>
+              {/* hero area start */}
+              <HeroBannerFour />
+              {/* hero area end */}
 
-            {/* gallery area start */}
-            <GalleryOne />
-            {/* gallery area end */}
+              {/* gallery area start */}
+              <GalleryOne />
+              {/* gallery area end */}
 
-            {/* about area start */}
-            <AboutThree />
-            {/* about area end */}
+              {/* about area start */}
+              <AboutThree />
+              {/* about area end */}
 
-            {/* brand area start */}
-            <BrandThree />
-            {/* brand area end */}
+              {/* brand area start */}
+              <BrandThree />
+              {/* brand area end */}
 
-            {/* project area start */}
-            <ProjectFour />
-            {/* project area end */}
+              {/* project area start */}
+              <ProjectFour />
+              {/* project area end */}
 
-            {/* video area start */}
-            <VideoThree />
-            {/* video area end */}
+              {/* video area start */}
+              <VideoThree />
+              {/* video area end */}
 
-            {/* service area start */}
-            <ServiceFour />
-            {/* service area end */}
+              {/* service area start */}
+              <ServiceFour />
+              {/* service area end */}
 
-            {/* contact area start */}
-            <ContactOne />
-            {/* contact area end */}
-          </main>
+              {/* contact area start */}
+              <ContactOne />
+              {/* contact area end */}
+            </main>
 
-          {/* footer area */}
-          <FooterOne />
+            {/* footer area */}
+            <FooterOne />
 
-          {/* footer area */}
+            {/* footer area */}
+          </div>
         </div>
       </div>
     </Wrapper>

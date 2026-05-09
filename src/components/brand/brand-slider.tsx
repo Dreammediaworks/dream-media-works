@@ -11,6 +11,9 @@ import b_4 from "@/assets/img/home-01/brand/4.png";
 import b_5 from "@/assets/img/home-01/brand/5.png";
 import b_6 from "@/assets/img/home-01/brand/6.png";
 import b_7 from "@/assets/img/home-01/brand/7.png";
+import b_8 from "@/assets/img/home-01/brand/8.png";
+import b_9 from "@/assets/img/home-01/brand/9.png";
+import b_10 from "@/assets/img/home-01/brand/10.png";
 // import b_8 from "@/assets/img/home-01/brand/8.png";
 
 const brand_images = [
@@ -21,7 +24,9 @@ const brand_images = [
   b_5,
   b_6,
   b_7,
-  // b_8,
+  b_8,
+  b_9,
+  b_10,
   b_1,
   // b_2,
   b_3,
@@ -29,7 +34,9 @@ const brand_images = [
   b_5,
   b_6,
   b_7,
-  // b_8,
+  b_8,
+  b_9,
+  b_10,
 ];
 
 export default function BrandSlider() {

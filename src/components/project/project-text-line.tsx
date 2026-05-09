@@ -39,7 +39,13 @@ const ProjectTextLine = () => {
         rk
       </span>
       <span className="textline-2 dmw-text-orange">Our</span>
-
+      <span className="textline-1">
+        WO
+        {/* <span>
+          <Image src={shape} alt="shape" />
+        </span> */}
+        rk
+      </span>
       <span className="textline-2 dmw-text-orange">Our</span>
       <span className="textline-1">
         WO
@@ -49,7 +55,13 @@ const ProjectTextLine = () => {
         rk
       </span>
       <span className="textline-2 dmw-text-orange">Our</span>
-
+      <span className="textline-1">
+        WO
+        {/* <span>
+          <Image src={shape} alt="shape" />
+        </span> */}
+        rk
+      </span>
       <span className="textline-2 dmw-text-orange">Our</span>
       <span className="textline-1">
         W
@@ -58,7 +70,6 @@ const ProjectTextLine = () => {
         </span>
         rk
       </span>
-      <span className="textline-2 dmw-text-orange">Our</span>
     </div>
   );
 };

@@ -208,15 +208,6 @@
         font-size: 18px;
         font-weight: 500;
         line-height: 1;
-        &::after{
-            content: "";
-            height: 1px;
-            width: 40px;
-            background-color: #5D5D63;
-            display: inline-block;
-            transform: translateY(-3px);
-            margin-left: 14px;
-        }
     }
     &-title{
         font-size: 120px;

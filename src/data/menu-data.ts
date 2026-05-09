@@ -1,4 +1,5 @@
 import { IMenuDT } from "@/types/menu-d-t";
+import { ourWorkCategories } from "@/data/our-work-data";
 
 const menu_data: IMenuDT[] = [
   {
@@ -44,28 +45,11 @@ const menu_data: IMenuDT[] = [
     id: 3,
     title: "Our Work",
     link: "/our-work",
-    home_menus: [
-      {
-        title: "Branding",
-        link: "/our-work/branding",
-        img: "/assets/img/our-work/branding/branding1.png",
-      },
-      {
-        title: "Concept",
-        link: "/our-work/concept",
-        img: "/assets/img/our-work/concept/concept1.png",
-      },
-      {
-        title: "Creative",
-        link: "/our-work",
-        img: "/assets/img/our-work/branding/branding3.png",
-      },
-      {
-        title: "Visuals",
-        link: "/our-work/visual",
-        img: "/assets/img/our-work/visual/visual1.png",
-      },
-    ],
+    home_menus: ourWorkCategories?.map((category) => ({
+      title: category?.title,
+      link: `/our-work/${category.slug}`,
+      img: category?.featuredImage,
+    })),
     // portfolio_mega_menus: {
     //   first: {
     //     title: "PORTFOLIO LIST",
