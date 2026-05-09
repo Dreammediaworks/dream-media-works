@@ -1,3 +1,5 @@
+import type { StaticImageData } from "next/image";
+
 export interface IMenuDT {
   id: number;
   title: string;
@@ -5,7 +7,7 @@ export interface IMenuDT {
   home_menus?: {
     title: string;
     link: string;
-    img: string;
+    img: string | StaticImageData;
   }[];
   pages_mega_menu?: {
     first: {
