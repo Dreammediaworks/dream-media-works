@@ -114,17 +114,17 @@ const menu_data: IMenuDT[] = [
     //   { title: "Contact", link: "/contact" },
     // ],
   },
-  {
-    id: 6,
-    title: "Shehnai Inweds",
-    link: "/shehnai-inweds",
-    // dropdown_menus: [
-    //   { title: "About Us", link: "/about-us" },
-    //   { title: "Our Services", link: "/service" },
-    //   { title: "Service Details", link: "/service-details" },
-    //   { title: "Contact", link: "/contact" },
-    // ],
-  },
+  // {
+  // id: 6,
+  // title: "Shehnai Inweds",
+  // link: "/shehnai-inweds",
+  // dropdown_menus: [
+  //   { title: "About Us", link: "/about-us" },
+  //   { title: "Our Services", link: "/service" },
+  //   { title: "Service Details", link: "/service-details" },
+  //   { title: "Contact", link: "/contact" },
+  // ],
+  // },
 ];
 
 export default menu_data;
